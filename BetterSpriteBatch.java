@@ -188,7 +188,6 @@ public class BetterSpriteBatch extends SpriteBatch {
             float[] hsvt = new float[3];
             sourceColor.toHsv(hsvs);
             targetColor.toHsv(hsvt);
-            System.out.println("asdasd" + hsvt[0] + "   " + hsvs[1] + "   " + hsvs[2]);
             rainbowFontDraw(font, str, x, y, hsvs[0], hsvs[1], hsvs[2], sourceColor.a, hsvt[0] - hsvs[0], hsvt[1] - hsvs[1], hsvt[2] - hsvs[2], targetColor.a - sourceColor.a, colornumb, false);
 
         }
